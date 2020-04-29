@@ -55,7 +55,7 @@ class App extends React.Component {
 
     if ((min === 0) & (sec === 0)) {
       clearInterval(this.intervalHandle);
-      this.setState({ disabled: true });
+      this.setState({ disabled: true, buttonText: "New Game" });
     }
 
     this.secondsRemaining--;
@@ -83,7 +83,7 @@ class App extends React.Component {
     }
     else if (buttonValue === "Start Game") {
       this.intervalHandle = setInterval(this.tick, 1000);
-      this.state.minutes = '02';
+      this.state.minutes = '01';
       let time = this.state.minutes;
       this.secondsRemaining = time * 60;
       buttonValue = "Stop Game";
