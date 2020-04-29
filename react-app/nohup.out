@@ -1,0 +1,9 @@
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Debug | com.jetbrains.rd.util.threading.ByteBufferAsyncProcessor | 10:Idea Main Thread | Pausing, reason=Disconnected, state=Initialized 
+Debug | com.jetbrains.rd.framework.SocketWire.Server | 27:EarlyStartServerWire | EarlyStartServerWire: listening /127.0.0.1:41491 
+Installation home directory: file:////media/ishwor/G/JetBrains.Rider-2019.2.3/JetBrains Rider-2019.2.3
+System directory: file:////home/ishwor/.Rider2019.2/system
+Config directory: file:////home/ishwor/.Rider2019.2/config
+Log directory: file:////home/ishwor/.Rider2019.2/system/log
+
+Following output will be written to a log file /home/ishwor/.Rider2019.2/system/log/frontend.log

@@ -1,0 +1,51 @@
+.App {
+  width: 80%;
+  /* background-color: rgb(131, 139, 136); */
+  margin: auto;
+   text-align:left;
+  color:mediumvioletred;
+  font-size:medium;
+  align-self: center;
+}
+.left {
+  text-align: center;
+  float: left;
+  /* background: rgb(168, 184, 182); */
+  width: auto;
+  align-self: center;
+ /*  border: 1px solid tomato; */
+  /* background-color:navajowhite; */
+}
+
+.right {
+  float: left;
+ /*  background: rgb(134, 164, 182); */
+  width: auto;
+  height: auto;
+  background-origin: padding-box;
+  align-self: auto;
+  /* border: 1px solid tomato; */
+  /* background-color:navajowhite; */
+}
+
+div {
+  margin: 5px;
+  border-spacing: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title
+{
+  align-self: center;
+  color: mediumvioletred;
+  font-size: xx-large;
+  position: relative;
+  margin-left: 7vw;
+  text-align: start;
+}
+
+
+

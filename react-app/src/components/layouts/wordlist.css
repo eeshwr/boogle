@@ -1,0 +1,16 @@
+li {
+  font-size: small;
+  font-family: Georgia, "Times New Roman";
+  text-transform: lowercase;
+  font-weight: normal;
+  color: green;
+}
+
+
+nav ul{
+  height: 50vh;
+  max-height:25vh;
+  position: relative;
+   width:70%;
+  }
+nav ul{overflow:hidden; overflow-y:scroll; border:none;}

@@ -1,0 +1,14 @@
+.input-res {
+  position: relative;
+ /*  border:1px solid tomato; */
+  text-transform: lowercase;
+   margin: 0 auto;
+    width: 40vw;
+    max-width: 37vh;
+    height: 10vw;
+    max-height: 5vh;
+    font-size: 1rem;
+   /*  background-color:navajowhite; */
+    text-decoration-color: black;
+ 
+}
