@@ -1,3 +1,6 @@
+import random
+
+
 class boogle():
     words = {"play", "lay", "home", "hole", "role", "leg", "egg",
              "eat", "let", "tea", "max", "hoax", "meat", "mole", "drink", "sleep", "watch", "donkey", "consider"}
@@ -7,26 +10,26 @@ class boogle():
     border = '+'
 
     n = 6
+    ncolumn = 4
 
     def __init__(self):
-        pass
+        self.deck = self.generate_board()
+        self.board = self.add_boarders()
+
+    def board_4X4(self):
+        return [self.deck[i:i+4] for i in range(0, 16, 4)]
 
     def generate_board(self):
-        # deck = [x for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
-        # import random
-        # random.shuffle(deck,)
-        # abcd = 'abcdefghijklmnopqrsquvwxyz'
-        self.board = [x for x in '+++++++play++homx++rlez++ggta+++++++']
+        self.deck = [x for x in 'abcdefghijklmnopqrstuvwxyz']
+        random.shuffle(self.deck,)
+        return self.deck[:16]
 
-    def Board(self):
-        """Input is a string of space-separated rows of N letters each;
-        result is a string of size (N+2)**2 with borders all around."""
-        rows = "play homx rlez ggta".split()
+    def add_boarders(self):
+        text = ''.join(r for r in self.deck)
+        rows = [text[index: index + 4] for index in range(0, len(text), 4)]
         b = self.border
-        N = len(rows)
-        rows = [b*N] + rows + [b*N]
-        self.board = ''.join(b + row + b for row in rows)
-        return self.board
+        rows = [b*4] + rows + [b*4]
+        return ''.join(b + row + b for row in rows)
 
     def neighbours(self, position, n):
         return [position-1, position+1, position-n, position-n-1, position-n+1, position+n, position+n-1, position+n+1]
