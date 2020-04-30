@@ -21,14 +21,30 @@ class App extends React.Component {
   };
 
   addWord = word => {
+
+    var word_upper = word.trim().toUpperCase();
+
     var value = this.state.correct_words.find(element => {
-      return element.trim().toUpperCase() === word.trim().toUpperCase()
+
+      return element.trim() === word_upper
+
     });
     if (value) {
-      this.setState({ words: [...this.state.words, word.trim()] });
+      if (this.state.words.includes(word_upper)) {
+
+        alert("You already typed this word .");
+
+      }
+      else {
+
+        this.setState({ words: [...this.state.words, word_upper] });
+
+      }
     }
     else {
+
       alert("Invalid word");
+
     }
   };
 

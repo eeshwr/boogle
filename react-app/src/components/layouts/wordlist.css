@@ -1,7 +1,7 @@
 li {
   font-size: small;
   font-family: Georgia, "Times New Roman";
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-weight: normal;
   color: green;
 }

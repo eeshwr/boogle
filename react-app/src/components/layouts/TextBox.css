@@ -1,7 +1,7 @@
 .input-res {
   position: relative;
  /*  border:1px solid tomato; */
-  text-transform: lowercase;
+  text-transform: uppercase;
    margin: 0 auto;
     width: 40vw;
     max-width: 37vh;
