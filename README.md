@@ -3,7 +3,7 @@
 ## Download repository or clone it.
 
 ## To run backend flask server.
-  Go to repository folder. i.e boogle
+  Go to downloaded repository folder
 
   1. Install python and pip , if you have not done it yet.
   2. Go to repository folder. i.e boogle
@@ -22,7 +22,7 @@
 
 ## To run the frontend react application.
 
-  Go to repository folder. i.e boogle
+  Go to downloaded repository folder.
   
   On command prompt
   
