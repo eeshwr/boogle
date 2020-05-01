@@ -2,17 +2,12 @@ import random
 
 
 class boogle():
-    words = {"play", "lay", "home", "hole", "role", "leg", "egg",
-             "eat", "let", "tea", "max", "hoax", "meat", "mole", "drink", "sleep", "watch", "donkey", "consider"}
-
-    prefixes = set(word[:letter]
-                   for word in words for letter in range(len(word)))
     border = '+'
-
     n = 6
     ncolumn = 4
 
     def __init__(self):
+        self.words, self.prefixes = self.read_words('words.txt')
         self.deck = self.generate_board()
         self.board = self.add_boarders()
 
@@ -20,7 +15,7 @@ class boogle():
         return [self.deck[i:i+4] for i in range(0, 16, 4)]
 
     def generate_board(self):
-        self.deck = [x for x in 'abcdefghijklmnopqrstuvwxyz']
+        self.deck = [x for x in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
         random.shuffle(self.deck,)
         return self.deck[:16]
 
@@ -33,6 +28,15 @@ class boogle():
 
     def neighbours(self, position, n):
         return [position-1, position+1, position-n, position-n-1, position-n+1, position+n, position+n-1, position+n+1]
+
+    def read_words(self, txt_file):
+        word_list = set(open(txt_file).read().upper().split())
+        prefix_list = set(
+            p for word in word_list for p in self.get_prefixes(word))
+        return word_list, prefix_list
+
+    def get_prefixes(self, word):
+        return [word[:i] for i in range(len(word))]
 
     def possible_words(self):
 
