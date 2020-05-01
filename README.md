@@ -1,7 +1,5 @@
 # boogle
 
-## Download repository or clone it.
-
 ## To run backend flask server.
   Go to downloaded repository folder
 
@@ -33,4 +31,4 @@
   2. npm install
   3. npm start
   
-  ### It should start the front appliation at localhost:50001
+  ### It should start the front appliation at localhost:5001
