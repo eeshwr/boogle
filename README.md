@@ -19,7 +19,6 @@ To run backend flask server.
 To run the frontend react application.
 
   1. Go to repository folder. i.e boogle
-
   On command prompt
   2. cd react-app
   3. npm install
