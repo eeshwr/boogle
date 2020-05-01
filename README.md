@@ -14,11 +14,11 @@
   
   4. pip install -r requirements.txt
 
-  ### It should install all the requirements to run backend server.
+   It should install all the requirements to run backend server.
   
   5. python boogle.py
   
-  ### It should start the server on localhost:5000
+  It should start the server on localhost:5000
 
 
 ## To run the frontend react application.
@@ -31,4 +31,3 @@
   2. npm install
   3. npm start
   
-  ### It should start the front appliation at localhost:5001
