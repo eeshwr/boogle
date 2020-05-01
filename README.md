@@ -5,7 +5,7 @@
 ## To run backend flask server.
   Go to downloaded repository folder
 
-  1. Install python and pip , if you have not done it yet.
+  1. Install python3 and pip3 , if you have not done it yet.
   2. Go to repository folder. i.e boogle
   
   On command prompt
