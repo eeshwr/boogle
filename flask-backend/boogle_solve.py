@@ -2,11 +2,6 @@ import random
 
 
 class boogle():
-    """ words = {"play", "lay", "home", "hole", "role", "leg", "egg",
-             "eat", "let", "tea", "max", "hoax", "meat", "mole", "drink", "sleep", "watch", "donkey", "consider"}
-
-    prefixes = set(word[:letter]
-                   for word in words for letter in range(len(word))) """
     border = '+'
     n = 6
     ncolumn = 4
